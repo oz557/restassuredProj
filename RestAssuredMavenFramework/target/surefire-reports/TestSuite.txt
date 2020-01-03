@@ -1,0 +1,131 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 15, Errors: 0, Skipped: 6, Time elapsed: 28.138 sec <<< FAILURE!
+checkContentLength(com.employeesapi.testcases.TC001_Get_All_Employees)  Time elapsed: 0.058 sec  <<< FAILURE!
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkContentLength(TC001_Get_All_Employees.java:85)
+
+checkContentType(com.employeesapi.testcases.TC001_Get_All_Employees)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [text/html; charset=iso-8859-1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkContentType(TC001_Get_All_Employees.java:60)
+
+checkStatusCode(com.employeesapi.testcases.TC001_Get_All_Employees)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkStatusCode(TC001_Get_All_Employees.java:35)
+
+checkstatusLine(com.employeesapi.testcases.TC001_Get_All_Employees)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 520 status code 520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkstatusLine(TC001_Get_All_Employees.java:51)
+
+checkContentLength(com.employeesapi.testcases.TC002_Get_Single_Emp_Rec)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkContentLength(TC002_Get_Single_Emp_Rec.java:59)
+
+checkContentType(com.employeesapi.testcases.TC002_Get_Single_Emp_Rec)  Time elapsed: 0.015 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<text/html; charset=[iso-8859-1]> but was:<text/html; charset=[UTF-8]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkContentType(TC002_Get_Single_Emp_Rec.java:49)
+
+checkStatusCode(com.employeesapi.testcases.TC002_Get_Single_Emp_Rec)  Time elapsed: 0.019 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<520> but was:<200>
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkStatusCode(TC002_Get_Single_Emp_Rec.java:33)
+
+checkStatusLine(com.employeesapi.testcases.TC002_Get_Single_Emp_Rec)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<HTTP/1.1 [520 status code 520]> but was:<HTTP/1.1 [200 OK]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkStatusLine(TC002_Get_Single_Emp_Rec.java:44)
+
+checkResponseBody(com.employeesapi.testcases.TC003_Post_Emp_Rec)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeesapi.testcases.TC003_Post_Emp_Rec.checkResponseBody(TC003_Post_Emp_Rec.java:53)
+
+checkcontentEncoding(com.employeesapi.testcases.TC003_Post_Emp_Rec)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [gzip] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC003_Post_Emp_Rec.checkcontentEncoding(TC003_Post_Emp_Rec.java:86)
+
+checkContentType(com.employeesapi.testcases.TC004_Put_Emp_Rec)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [text/html; charset=iso-8859-1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkContentType(TC004_Put_Emp_Rec.java:74)
+
+checkResponseBody(com.employeesapi.testcases.TC004_Put_Emp_Rec)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkResponseBody(TC004_Put_Emp_Rec.java:52)
+
+checkStatusCode(com.employeesapi.testcases.TC004_Put_Emp_Rec)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkStatusCode(TC004_Put_Emp_Rec.java:62)
+
+checkstatusLine(com.employeesapi.testcases.TC004_Put_Emp_Rec)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 520 status code 520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkstatusLine(TC004_Put_Emp_Rec.java:68)
+
+deleteEmloyee(com.employeesapi.testcases.TC005_Del_Emp_Rec)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+

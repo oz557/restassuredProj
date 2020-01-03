@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="35" failures="15" name="TestSuite" time="0.199" errors="0" skipped="6">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_191\jre\bin"/>
+    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ozma1\Desktop\Eclipse Oxygen\RestAssuredMavenFramework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\ozma1\Desktop\Eclipse Oxygen\RestAssuredMavenFramework"/>
+    <property name="java.runtime.version" value="1.8.0_191-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\ozma1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\ozma1\Desktop\Eclipse Oxygen\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4996043461303583281.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jdk1.8.0_191/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.8.0_191/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.8.0_191/bin/../jre/lib/i386;C:\Program Files (x86)\Java\jdk1.8.0_191\bin;C:\Program Files\nodejs\;C:\Users\ozma1\Documents\Appium\Android SDK tools\sdk-tools-windows-4333796\platform-tools;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Users\ozma1\.android;C:\Users\ozma1\.android\avd;C:\Users\ozma1\.android\.android;C:\Users\ozma1\Documents\Maven 3.6.3\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\ozma1\AppData\Local\Microsoft\WindowsApps;C:\Users\ozma1\AppData\Roaming\npm;C:\Users\ozma1\Desktop\Eclipse Oxygen\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\ozma1"/>
+    <property name="user.timezone" value="America/Regina"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ozma1"/>
+    <property name="java.class.path" value="C:\Users\ozma1\Desktop\Eclipse Oxygen\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.8.0_191\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_191"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\ozma1\Desktop\Eclipse Oxygen\RestAssuredMavenFramework\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkContentLength" time="0.058">
+    <failure type="java.lang.NumberFormatException:">java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkContentLength(TC001_Get_All_Employees.java:85)
+</failure>
+    <system-err>log4j:WARN No appenders could be found for logger (RestAssuredMavenFramework).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+</system-err>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkContentType" time="0">
+    <failure message="expected [text/html; charset=UTF-8] but found [text/html; charset=iso-8859-1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [text/html; charset=iso-8859-1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkContentType(TC001_Get_All_Employees.java:60)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkCookies" time="0.002"/>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkResponseBody" time="0.027"/>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkResponseTime" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkServerType" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkStatusCode" time="0.001">
+    <failure message="expected [200] but found [520]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkStatusCode(TC001_Get_All_Employees.java:35)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkcontentEncoding" time="0"/>
+  <testcase classname="com.employeesapi.testcases.TC001_Get_All_Employees" name="checkstatusLine" time="0.001">
+    <failure message="expected [HTTP/1.1 200 OK] but found [HTTP/1.1 520 status code 520]" type="java.lang.AssertionError">java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 520 status code 520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC001_Get_All_Employees.checkstatusLine(TC001_Get_All_Employees.java:51)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec" name="checkContentLength" time="0.002">
+    <failure type="java.lang.NumberFormatException:">java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkContentLength(TC002_Get_Single_Emp_Rec.java:59)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec" name="checkContentType" time="0.015">
+    <failure message="expected:&lt;text/html; charset=[iso-8859-1]&gt; but was:&lt;text/html; charset=[UTF-8]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;text/html; charset=[iso-8859-1]&gt; but was:&lt;text/html; charset=[UTF-8]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkContentType(TC002_Get_Single_Emp_Rec.java:49)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec" name="checkResponseBody" time="0.006"/>
+  <testcase classname="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec" name="checkResponseTime" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec" name="checkStatusCode" time="0.019">
+    <failure message="expected:&lt;520&gt; but was:&lt;200&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;520&gt; but was:&lt;200&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkStatusCode(TC002_Get_Single_Emp_Rec.java:33)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec" name="checkStatusLine" time="0.002">
+    <failure message="expected:&lt;HTTP/1.1 [520 status code 520]&gt; but was:&lt;HTTP/1.1 [200 OK]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;HTTP/1.1 [520 status code 520]&gt; but was:&lt;HTTP/1.1 [200 OK]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.employeesapi.testcases.TC002_Get_Single_Emp_Rec.checkStatusLine(TC002_Get_Single_Emp_Rec.java:44)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec" name="checkserverType" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC003_Post_Emp_Rec" name="checkContentType" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC003_Post_Emp_Rec" name="checkResponseBody" time="0.002">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeesapi.testcases.TC003_Post_Emp_Rec.checkResponseBody(TC003_Post_Emp_Rec.java:53)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC003_Post_Emp_Rec" name="checkStatusCode" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC003_Post_Emp_Rec" name="checkcontentEncoding" time="0.002">
+    <failure message="expected [gzip] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: expected [gzip] but found [null]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC003_Post_Emp_Rec.checkcontentEncoding(TC003_Post_Emp_Rec.java:86)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC003_Post_Emp_Rec" name="checkserverType" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC003_Post_Emp_Rec" name="checkstatusLine" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC004_Put_Emp_Rec" name="checkContentType" time="0.01">
+    <failure message="expected [text/html; charset=UTF-8] but found [text/html; charset=iso-8859-1]" type="java.lang.AssertionError">java.lang.AssertionError: expected [text/html; charset=UTF-8] but found [text/html; charset=iso-8859-1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkContentType(TC004_Put_Emp_Rec.java:74)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC004_Put_Emp_Rec" name="checkResponseBody" time="0.003">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkResponseBody(TC004_Put_Emp_Rec.java:52)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC004_Put_Emp_Rec" name="checkStatusCode" time="0.002">
+    <failure message="expected [200] but found [520]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkStatusCode(TC004_Put_Emp_Rec.java:62)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC004_Put_Emp_Rec" name="checkcontentEncoding" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC004_Put_Emp_Rec" name="checkserverType" time="0.001"/>
+  <testcase classname="com.employeesapi.testcases.TC004_Put_Emp_Rec" name="checkstatusLine" time="0.001">
+    <failure message="expected [HTTP/1.1 200 OK] but found [HTTP/1.1 520 status code 520]" type="java.lang.AssertionError">java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 520 status code 520]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkstatusLine(TC004_Put_Emp_Rec.java:68)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC005_Del_Emp_Rec" name="deleteEmloyee" time="0.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+</failure>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC005_Del_Emp_Rec" name="checkContentType" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC005_Del_Emp_Rec" name="checkResponseBody" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC005_Del_Emp_Rec" name="checkStatusCode" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC005_Del_Emp_Rec" name="checkStatusLine" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC005_Del_Emp_Rec" name="checkserverType" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.employeesapi.testcases.TC005_Del_Emp_Rec" name="tearDown" time="0.006">
+    <skipped/>
+  </testcase>
+</testsuite>

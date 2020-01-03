@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeesapiSuite]">
+  <listeners>
+    <listener class-name="com.employeeapi.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="EmployeeapiTest(failed)">
+    <classes>
+      <class name="com.employeesapi.testcases.TC004_Put_Emp_Rec">
+        <methods>
+          <include name="checkcontentEncoding"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="updateEmployee"/>
+        </methods>
+      </class> <!-- com.employeesapi.testcases.TC004_Put_Emp_Rec -->
+      <class name="com.employeesapi.testcases.TC003_Post_Emp_Rec">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkcontentEncoding"/>
+          <include name="createEmployee"/>
+          <include name="setup"/>
+          <include name="checkResponseBody"/>
+        </methods>
+      </class> <!-- com.employeesapi.testcases.TC003_Post_Emp_Rec -->
+      <class name="com.employeesapi.testcases.TC001_Get_All_Employees">
+        <methods>
+          <include name="checkContentLength"/>
+          <include name="getallEmployeess"/>
+          <include name="checkResponseTime"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.employeesapi.testcases.TC001_Get_All_Employees -->
+      <class name="com.employeesapi.testcases.TC005_Del_Emp_Rec">
+        <methods>
+          <include name="checkserverType"/>
+          <include name="checkStatusLine"/>
+          <include name="checkContentType"/>
+          <include name="deleteEmloyee"/>
+          <include name="setup"/>
+          <include name="checkStatusCode"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+        </methods>
+      </class> <!-- com.employeesapi.testcases.TC005_Del_Emp_Rec -->
+    </classes>
+  </test> <!-- EmployeeapiTest(failed) -->
+</suite> <!-- Failed suite [EmployeesapiSuite] -->

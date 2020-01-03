@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="5" failed="6" ignored="0" total="33" passed="22">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EmployeesapiSuite" duration-ms="27234" started-at="2020-01-03T16:13:53Z" finished-at="2020-01-03T16:14:21Z">
+    <groups>
+    </groups>
+    <test name="EmployeeapiTest" duration-ms="27234" started-at="2020-01-03T16:13:53Z" finished-at="2020-01-03T16:14:21Z">
+      <class name="com.employeesapi.testcases.TC001_Get_All_Employees">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="setup" is-config="true" duration-ms="18" started-at="2020-01-03T16:13:54Z" finished-at="2020-01-03T16:13:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getallEmployeess()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="getallEmployeess" is-config="true" duration-ms="8656" started-at="2020-01-03T16:13:54Z" finished-at="2020-01-03T16:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getallEmployeess -->
+        <test-method status="FAIL" signature="checkContentLength()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkContentLength" duration-ms="11" started-at="2020-01-03T16:14:02Z" finished-at="2020-01-03T16:14:02Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: null
+at java.lang.Integer.parseInt(Integer.java:542)
+at java.lang.Integer.parseInt(Integer.java:615)
+at com.employeesapi.testcases.TC001_Get_All_Employees.checkContentLength(TC001_Get_All_Employees.java:85)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentLength -->
+        <test-method status="PASS" signature="checkContentType()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkContentType" duration-ms="3" started-at="2020-01-03T16:14:02Z" finished-at="2020-01-03T16:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="PASS" signature="checkCookies()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkCookies" duration-ms="1" started-at="2020-01-03T16:14:02Z" finished-at="2020-01-03T16:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCookies -->
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkResponseBody" duration-ms="99" started-at="2020-01-03T16:14:02Z" finished-at="2020-01-03T16:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="FAIL" signature="checkResponseTime()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkResponseTime" duration-ms="2" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.employeesapi.testcases.TC001_Get_All_Employees.checkResponseTime(TC001_Get_All_Employees.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method status="PASS" signature="checkServerType()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkServerType" duration-ms="1" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkServerType -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkStatusCode" duration-ms="0" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="PASS" signature="checkcontentEncoding()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkcontentEncoding" duration-ms="0" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontentEncoding -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="checkstatusLine" duration-ms="0" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.employeesapi.testcases.TC001_Get_All_Employees@181a1bc]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeesapi.testcases.TC001_Get_All_Employees -->
+      <class name="com.employeesapi.testcases.TC004_Put_Emp_Rec">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="updateEmployee()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="updateEmployee" is-config="true" duration-ms="6009" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployee -->
+        <test-method status="PASS" signature="checkContentType()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="checkContentType" duration-ms="2" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="FAIL" signature="checkResponseBody()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="checkResponseBody" duration-ms="12" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkResponseBody(TC004_Put_Emp_Rec.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="checkStatusCode" duration-ms="2" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="FAIL" signature="checkcontentEncoding()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="checkcontentEncoding" duration-ms="2" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [gzip] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [gzip] but found [null]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.employeesapi.testcases.TC004_Put_Emp_Rec.checkcontentEncoding(TC004_Put_Emp_Rec.java:85)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontentEncoding -->
+        <test-method status="PASS" signature="checkserverType()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="checkserverType" duration-ms="3" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="checkstatusLine" duration-ms="1" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.employeesapi.testcases.TC004_Put_Emp_Rec@4a765]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeesapi.testcases.TC004_Put_Emp_Rec -->
+      <class name="com.employeesapi.testcases.TC005_Del_Emp_Rec">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="setup" is-config="true" duration-ms="2" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteEmloyee()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="deleteEmloyee" is-config="true" duration-ms="3" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmloyee -->
+        <test-method status="SKIP" signature="checkContentType()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="checkContentType" duration-ms="0" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="SKIP" signature="checkResponseBody()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="checkResponseBody" duration-ms="0" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="SKIP" signature="checkStatusCode()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="checkStatusCode" duration-ms="0" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="SKIP" signature="checkStatusLine()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="checkStatusLine" duration-ms="0" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method status="SKIP" signature="checkserverType()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="checkserverType" duration-ms="0" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.employeesapi.testcases.TC005_Del_Emp_Rec.deleteEmloyee(TC005_Del_Emp_Rec.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.employeesapi.testcases.TC005_Del_Emp_Rec@3e6358]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T16:14:21Z" finished-at="2020-01-03T16:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeesapi.testcases.TC005_Del_Emp_Rec -->
+      <class name="com.employeesapi.testcases.TC002_Get_Single_Emp_Rec">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getEmployeeData()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="getEmployeeData" is-config="true" duration-ms="5929" started-at="2020-01-03T16:14:03Z" finished-at="2020-01-03T16:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeData -->
+        <test-method status="PASS" signature="checkContentLength()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="checkContentLength" duration-ms="7" started-at="2020-01-03T16:14:08Z" finished-at="2020-01-03T16:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentLength -->
+        <test-method status="PASS" signature="checkContentType()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="checkContentType" duration-ms="2" started-at="2020-01-03T16:14:08Z" finished-at="2020-01-03T16:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="checkResponseBody" duration-ms="3" started-at="2020-01-03T16:14:09Z" finished-at="2020-01-03T16:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="PASS" signature="checkResponseTime()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="checkResponseTime" duration-ms="1" started-at="2020-01-03T16:14:09Z" finished-at="2020-01-03T16:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="checkStatusCode" duration-ms="2" started-at="2020-01-03T16:14:09Z" finished-at="2020-01-03T16:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="PASS" signature="checkStatusLine()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="checkStatusLine" duration-ms="2" started-at="2020-01-03T16:14:09Z" finished-at="2020-01-03T16:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method status="PASS" signature="checkserverType()[pri:0, instance:com.employeesapi.testcases.TC002_Get_Single_Emp_Rec@616ca2]" name="checkserverType" duration-ms="2" started-at="2020-01-03T16:14:09Z" finished-at="2020-01-03T16:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+      </class> <!-- com.employeesapi.testcases.TC002_Get_Single_Emp_Rec -->
+      <class name="com.employeesapi.testcases.TC003_Post_Emp_Rec">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-03T16:14:09Z" finished-at="2020-01-03T16:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createEmployee()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="createEmployee" is-config="true" duration-ms="6024" started-at="2020-01-03T16:14:09Z" finished-at="2020-01-03T16:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployee -->
+        <test-method status="PASS" signature="checkContentType()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="checkContentType" duration-ms="1" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method status="FAIL" signature="checkResponseBody()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="checkResponseBody" duration-ms="4" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at com.employeesapi.testcases.TC003_Post_Emp_Rec.checkResponseBody(TC003_Post_Emp_Rec.java:53)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="PASS" signature="checkStatusCode()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="checkStatusCode" duration-ms="2" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method status="FAIL" signature="checkcontentEncoding()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="checkcontentEncoding" duration-ms="2" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [gzip] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [gzip] but found [null]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.employeesapi.testcases.TC003_Post_Emp_Rec.checkcontentEncoding(TC003_Post_Emp_Rec.java:86)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcontentEncoding -->
+        <test-method status="PASS" signature="checkserverType()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="checkserverType" duration-ms="2" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkserverType -->
+        <test-method status="PASS" signature="checkstatusLine()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="checkstatusLine" duration-ms="0" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkstatusLine -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.employeesapi.testcases.TC003_Post_Emp_Rec@1fee20c]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-03T16:14:15Z" finished-at="2020-01-03T16:14:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeesapi.testcases.TC003_Post_Emp_Rec -->
+    </test> <!-- EmployeeapiTest -->
+  </suite> <!-- EmployeesapiSuite -->
+</testng-results>
